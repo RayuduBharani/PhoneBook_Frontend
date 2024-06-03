@@ -1,0 +1,134 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.inner-div{
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0 10px 10px rgb(201, 199, 199);
+}
+.inner-div>h1{
+  color: rgb(255, 37, 59);
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+.data-div{
+  width: 90%;
+  height: 62%;
+  /* background-color: green; */
+  overflow-y: scroll;
+  margin-left: 3%;
+}
+.data-div::-webkit-scrollbar {
+  width: 0;
+  margin-top: 20px;
+}
+.editTh{
+  cursor: pointer;
+}
+
+table{
+  width: 100%;
+  border-collapse:collapse;
+}
+th{
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(75, 74, 74);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+}
+tr{
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid rgb(214, 210, 210);
+}
+td{
+  font-weight: 500;
+  color: rgb(169, 170, 169);
+  padding: 10px;
+  text-align: center;
+  padding: 17px;
+}
+i{
+  cursor: pointer;
+}
+.buttons-div{
+  margin-left: 5%;
+  width: 90%;
+  height: 17%;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-me{
+  cursor: pointer;
+  background-color: blue;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}
+.button-me:hover{
+  background-color: rgb(255, 0, 0);
+}
+.enter-input{
+  margin: 10px;
+  width: 93%;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: 20px;
+}
+.background-modal{
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.none-div{
+  width: 100%;
+  height: 338px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.none{
+  font-size: 25px;
+}
+
+@media screen and (max-width:560px) {
+  .inner-div{
+      width: 89%;
+      height: 80%;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0px 0 10px 10px rgb(201, 199, 199);
+  }
+  .none{
+    font-size: 20px;
+  }
+  .heading{
+    font-size: 32px;
+  }
+  th{
+    font-size: 20px;
+  }
+}
